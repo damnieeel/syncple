@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHEDULE A LEAD</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <!-- Contenedor general para posterior seteo en desktop -->
+    <section class="grid-container">
+
+        <!-- Header con logo de SYNCPLE y logo del cliente -->
+        <header class="grid-header">
+            <a href="../index.html"><img src="../img/syncple-logo-header.png" alt="Logotipo de SYNCPLE" class="syncple-logo"></a>
+            <img src="../img/logo-kavak.png" alt="Logotipo de SYNCPLE" class="company-logo">
+        </header>
+
+        <!-- Main // Pantalla principal en desktop  -->
+        <main>
+            <!-- Plantilla de los forms  -->
+            <section class="form-template">
+                <div class="title-form">
+                    <img src="../img/schedule-icon-100.png" alt="Ícono de un calendario">
+                    <h1>SCHEDULE A LEAD</h1>
+                </div>
+                
+                <form action="">
+
+                    <label for="DNI">DNI</label>
+                    <div class="search-lead">
+                        <input type="text" name="dni" id="dni" placeholder="Search by DNI " required>
+                        <input type="button" name="" value="Search"  id="search-lead">
+                    </div>
+
+                    <label for="lead-name">Full Name</label>
+                    <input type="text" name="lead-name" id="lead-name" placeholder="Full name">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="" id="phone" placeholder="Phone +56912345678" required>
+
+                    <label for="date">Date and Time</label>
+                    <div class="date-time">
+                        <input type="date" name="date" id="date" value="0001-01-01">
+                        <input type="time" name="time" id="time">
+                    </div> 
+
+                    <label for="type">Service</label>
+                    <select name="type" id="type">
+                        <option value="">--Select a type--</option>
+                        <option value="Sale">Sale</option>
+                        <option value="Purchase">Purchase</option>
+                        <option value="After-sales">After-sale</option>
+                        <option value="Delivery">Delivery</option>
+                    </select>
+
+                    <label for="comments">Coments</label>
+                    <textarea name="comments" id="comments" cols="30" rows="3" placeholder="Important information about this case" ></textarea>
+
+                    <input type="submit" value="Schedule">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-item-menu-1">
+                <img src="../img/menu-icon.png" alt="Ícono menú tipo hamburguesa">
+            </div>
+            <div class="footer-item-menu-2">
+                <img src="../img/user-icon.png" alt="Ícono usuario">
+            </div>
+            <div class="footer-item-menu-3">
+                <img src="../img/plus-icon.png" alt="Ícono de más">
+            </div>
+            
+        </footer>
+    </section>
+</body>
+</html>
