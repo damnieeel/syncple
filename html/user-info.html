@@ -26,25 +26,53 @@
             <div class="user-img">
                 <img src="../img/user-photo.svg" alt="Foto de perfil del usuario">
             </div>
-            <div class="user-personal-info">
-                <form action="#">
-                    <h3>Personal Info</h3>
+            <form action="#" class="form-container">
+                <!-- Title Personal Info -->
+                <h3 class="user-form-pi-item">Personal Info</h3>
 
+                <!-- Inputs Personal Info -->
+                <div class="full-name-item">
                     <label for="fullName">Full Name</label>
                     <input type="text" name="fullName" id="fullName" placeholder="Danny Robert">
-                    
-                    <label for="birtDate">Birth Date</label>
-                    <input type="date" name="birtDate" id="birtDate">
+                </div>
 
+                <div class="birth-date-item">
+                    <label for="birthDate">Birth Date</label>
+                    <input type="date" name="birthDate" id="birthDate">
+                </div>
+
+                <div class="phone-item">
                     <label for="phone">Phone</label>
                     <input type="tel" name="phone" id="phone" placeholder="+56912345678">
+                </div>
 
+                <div class="email-item">
                     <label for="email">Work Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" placeholder="workemail@example.com">
+                </div>
 
+                <!-- Title Job Information -->
+                <h3 class="user-form-ji-item">Job Info</h3>
 
-                </form>
-            </div>
+                <!-- Inputs Job Info -->
+                <div class="position-item">
+                    <label for="position">Position</label>
+                    <input type="text" name="position" id="position" placeholder="Position">
+                </div>
+
+                <div class="company-item">
+                    <label for="company">Company</label>
+                    <input type="text" name="company" id="company" placeholder="Company Name">
+                </div>
+
+                <div class="country-item">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" placeholder="Country">
+                </div>
+
+                <input type="submit" value="Save Changes">
+
+            </form>
           </section>
         </main>
 

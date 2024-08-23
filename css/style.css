@@ -638,3 +638,67 @@ footer img{
     font-weight: bolder;
     font-size: 15px;
 }
+
+/* User Info Format */
+
+main .user-container{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+main .user-container .user-img{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+main .user-container .form-container{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+main .user-container .form-container label{
+    display: block;
+    font-weight: bold;
+}
+
+main .user-container .form-container input[type="text"],
+main .user-container .form-container input[type="date"],
+main .user-container .form-container input[type="tel"],
+main .user-container .form-container input[type="email"]{
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 2px solid #F7C324;
+    border-radius: 5px;
+    padding: 10px;  
+    font-size: 13px; 
+}
+
+main .user-container .form-container h3{
+    text-align: left;
+    color:#6558F5;
+    margin-bottom: 10px;
+}
+
+main .user-container .form-container input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: #6558F5;
+    appearance: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    border: 1px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
