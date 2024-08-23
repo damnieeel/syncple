@@ -450,7 +450,7 @@ button {
     margin-right: 15px;
     display: flex;
     align-items: middle;
-    justify-content: space-evenly;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
