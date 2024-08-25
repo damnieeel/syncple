@@ -103,12 +103,12 @@
             <div class="footer-item-menu-1">
                
                 <!-- nav-bar-mobile -->
-                <nav class="navbar bg-body-tertiary">
+                <nav>
                     <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                      <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span><img src="img/menu-icon.png" alt="Menú hamburguesa"></span>
                       </button>
-                      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
                           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -116,27 +116,41 @@
                         <div class="offcanvas-body">
                           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
                             <form class="d-flex mt-3" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <input class="form-control me-1" type="search" placeholder="What are you looking for?" aria-label="Search">
                                 <button class="btn btn-outline-success" type="submit">Search</button>
                             </form>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Link</a>
-                            </li>
                             <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                                Operations
                               </a>
                               <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Sales</a></li>
+                                <li><a class="dropdown-item" href="#">Purchasing</a></li>
+                                <li><a class="dropdown-item" href="#">After-sales</a></li>
                                 <li>
                                   <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Tickets</a></li>
                               </ul>
+                              
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Costs
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ERP</a></li>
+                                <li><a class="dropdown-item" href="#">Uber Tickets</a></li>
+                                <li><a class="dropdown-item" href="#">Hubs Expenses</a></li>
+                                <li>
+                                  <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Tickets</a></li>
+                              </ul>
+                              
                             </li>
                           </ul>
                           
@@ -146,7 +160,10 @@
                   </nav>
             </div>
             <div class="footer-item-menu-2">
+              <a class="footer-user-button" href="html/user-info.html">
                 <img src="img/user-icon.png" alt="Ícono usuario">
+              </a>
+              
             </div>
             <div class="footer-item-menu-3">
                 <img src="img/plus-icon.png" alt="Ícono de más">
