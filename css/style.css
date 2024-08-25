@@ -3,9 +3,16 @@
     font-family: 'arial';
 }
 
+body{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
 .login-body{
     background-color: #E0DEFD;
 }
+
+
 /* Login Page */
 
 .background-login{
@@ -37,7 +44,7 @@
     font-weight: bolder;
     font-size: 13px;
 }
-/* Line loggin*/
+/* Line login*/
 
 .line-login{
     border: 0; /* Elimina el borde predeterminado */
@@ -155,6 +162,10 @@ header{
     justify-content:space-between;
     align-items: center;
     align-content: center;
+    position: fixed;
+    width: 100%;
+    top:0;
+    background-color: white;
 }
 
 header .syncple-logo {
@@ -284,12 +295,13 @@ button {
     margin-left: 35px;
     margin-right: 35px;
     margin-top: 10px;
-
+    padding: 0;
 }
 
 .container-tag-title{
     background-color: #E0DEFD;
     width: 30%;
+    height: auto;
     color: #6558F5;
     font-weight: bolder;
     font-size: 13px;
@@ -300,6 +312,7 @@ button {
 .container-tag{
     border-bottom: 2px solid #6558F5;
     width: 70%;
+    height: auto;
     font-size: 13px;
     text-align: center;
     padding: 5px;
@@ -446,11 +459,11 @@ button {
 .filter-changer{
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 15px ;
-    margin-right: 15px;
+    margin-left: 34px ;
+    margin-right: 34px;
     display: flex;
     align-items: middle;
-    justify-content: space-evenly;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
@@ -501,6 +514,12 @@ footer{
     padding: 5px;
     border-top: 1px solid #6558F5 ;
     justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    background-color: white;
+
 }
 .footer div{
     display: flex;
@@ -607,7 +626,6 @@ footer img{
     box-sizing: border-box;
     background-color: #6558F5;
     appearance: none;
-    border-radius: 5px;
     color: white;
     cursor: pointer;
     font-weight: bolder;
@@ -615,6 +633,12 @@ footer img{
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 18px;
+    transition: 1s;
+}
+
+.form-template input[type="submit"]:hover{
+    background-color:#a48efa;
+    border-radius: 5px;
 }
 
 .search-lead {
@@ -626,7 +650,7 @@ footer img{
     margin-right: 5px;
 }
 
-.search-lead #search-lead {
+.search-lead #searchLead {
     width: 40%;
     height: 30px;
     box-sizing: border-box;
@@ -637,4 +661,116 @@ footer img{
     color: black;
     font-weight: bolder;
     font-size: 15px;
+}
+
+
+
+/* User Info Format */
+
+main .user-container{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+main .user-container .user-img{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+main .user-container .form-container{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+main .user-container .form-container label{
+    display: block;
+    font-weight: bold;
+}
+
+main .user-container .form-container input[type="text"],
+main .user-container .form-container input[type="date"],
+main .user-container .form-container input[type="tel"],
+main .user-container .form-container input[type="email"]{
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 2px solid #F7C324;
+    border-radius: 5px;
+    padding: 10px;  
+    font-size: 13px; 
+}
+
+main .user-container .form-container h3{
+    text-align: left;
+    color:#6558F5;
+    margin-bottom: 10px;
+}
+
+main .user-container .form-container input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: #6558F5;
+    appearance: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    border: 1px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    transition: 1s;
+}
+
+main .user-container .form-container input[type="submit"]:hover{
+    background-color:#a48efa;
+    border-radius: 5px;
+}
+
+/* Bootstrap style (Menú hamburguesa)*/
+.btn{
+    background-color: #6558F5;
+    color: white;
+    border: 1px solid transparent !important;
+    transition: 1s;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #6558F5;
+    border: 1px solid #6558F5 !important;
+}
+
+.form-control{
+    border: 2px solid #F7C324;
+    color: #6558F5 !important;
+}
+
+.form-control::placeholder{
+    color: #6558F5;
+    font-style: italic;
+}
+
+.btn-close{
+    width: 1px;
+    height: auto;
+}
+
+.offcanvas{
+    background-color: #ecebf4;
+}
+
+.dropdown-menu{
+    border: 1px solid #6558F5;
+}
+
+.dropdown-divider{
+    border: 1px solid #6558F5;
 }
