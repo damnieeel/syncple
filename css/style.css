@@ -161,7 +161,6 @@ header{
     vertical-align: middle;
     position: fixed;
     top:0;
-    left:auto;
     width: 100%;
     background-color: white;
     height:50px;
@@ -170,10 +169,12 @@ header{
 header .syncple-logo {
     width: 150px;
     height: auto;
+    margin-left: 30px;
 }
 
 header .company-logo {
     width: 100px;
+    margin-right: 30px;
 }
 
 /* menú superior */
