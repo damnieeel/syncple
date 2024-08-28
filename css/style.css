@@ -509,7 +509,7 @@ button {
 footer {
     display: flex;
     border-top: 1px solid #6558F5;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     bottom: 0;
@@ -771,4 +771,9 @@ main .user-container .form-container input[type="submit"]:hover{
 
 .dropdown-divider{
     border: 1px solid #6558F5;
+}
+
+.container-fluid > button[type="button"]{
+    margin:0;
+    padding: 0;
 }
