@@ -513,7 +513,7 @@ footer {
     align-items: center;
     position: fixed;
     bottom: 0;
-    right: auto;
+    left: 0;
     background-color: white;
     width: 100%;
 }
