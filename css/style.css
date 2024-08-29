@@ -33,6 +33,10 @@ main{
     display: none;
 }
 
+.user-language{
+    display: none;
+}
+
 
 /* Login Page */
 
@@ -1088,6 +1092,10 @@ main .user-container .form-container input[type="submit"]:hover{
 
     .user-img img{
         width: 300px;
+    }
+
+    .user-language{
+        display: flex;
     }
 }
 
