@@ -11,6 +11,27 @@ body{
 .login-body{
     background-color: #E0DEFD;
 }
+h1{
+    font-weight: bolder;
+}
+h3{
+    font-weight: bold;
+    text-align: center;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main{
+    align-self: center;
+}
+
+.grid-sidebar{
+    display: none;
+}
 
 
 /* Login Page */
@@ -157,7 +178,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #6558F5;
+    border-bottom: 2px solid #6558F5;
     vertical-align: middle;
     position: fixed;
     top:0;
@@ -172,11 +193,20 @@ header .syncple-logo {
     margin-left: 30px;
 }
 
-header .company-logo {
+.company-logo {
     width: 100px;
     margin-right: 30px;
 }
 
+.company-logo-section{
+    display: none;
+}
+
+.header-user-button{
+    width: 40px;
+    height: auto;
+    margin-right: 30px;
+}
 /* menú superior */
 
 
@@ -229,13 +259,16 @@ button {
     border-bottom: 10px solid #D5E7F7;
     margin-left: 35px;
     margin-right: 35px;
-    grid-template-columns: rep(4,1fr);
-    grid-template-rows: rep(2, 50px);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 50px);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .selected-month-item{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     color: #6558F5;
     font-weight: bolder;
     font-size: 18px;
@@ -245,6 +278,9 @@ button {
 }
 
 .selected-day-item{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     color: #6558F5;
     font-weight: bolder;
     font-size: 18px;
@@ -254,6 +290,9 @@ button {
 }
 
 .selected-year-item{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     color: #6558F5;
     font-weight: bolder;
     font-size: 18px;
@@ -263,6 +302,9 @@ button {
 }
 
 .month-camp-item{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     color: #F7C324;
     font-weight: bolder;
     font-size: 13px;
@@ -272,6 +314,9 @@ button {
 }
 
 .day-camp-item{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     color: #F7C324;
     font-weight: bolder;
     font-size: 13px;
@@ -281,6 +326,9 @@ button {
 }
 
 .year-camp-item{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     color: #F7C324;
     font-weight: bolder;
     font-size: 13px;
@@ -301,21 +349,21 @@ button {
 .container-tag-title{
     background-color: #E0DEFD;
     width: 30%;
-    height: auto;
     color: #6558F5;
     font-weight: bolder;
     font-size: 13px;
     text-align: center;
-    padding: 5px;
+    padding: 0;
+    margin:0;
 }
 
 .container-tag{
     border-bottom: 2px solid #6558F5;
     width: 70%;
-    height: auto;
     font-size: 13px;
     text-align: center;
-    padding: 5px;
+    padding:0;
+    margin:0;
 }
 
 /* Scheduler Container */
@@ -508,7 +556,7 @@ button {
 /* Footer */
 footer {
     display: flex;
-    border-top: 1px solid #6558F5;
+    border-top: 2px solid #6558F5;
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
@@ -529,6 +577,10 @@ footer {
 footer img{
     width: 40px;
     height: auto;
+}
+
+.footer-item-menu-3{
+    cursor: pointer;
 }
 
 /* Forms format */
@@ -580,16 +632,24 @@ footer img{
     align-items: center;
 }
 
+input[type="date"]{
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
 .form-template .date-time input[type="date"],
 .form-template .date-time input[type="time"]{
     width: 50%;
     border: 2px solid #F7C324;
-    height: 10px;
+    height: 30px;
     font-size: 13px;
     background-color: white;
     padding: 10px;
     color: black;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .form-template .date-time input[type="date"]{
@@ -750,9 +810,8 @@ main .user-container .form-container input[type="submit"]:hover{
     border: 2px solid #F7C324;
     color: #6558F5 !important;
 }
-
 .form-control::placeholder{
-    color: #6558F5;
+    font-weight: bold;
     font-style: italic;
 }
 
@@ -763,17 +822,285 @@ main .user-container .form-container input[type="submit"]:hover{
 
 .offcanvas{
     background-color: #ecebf4;
+    color: #6558F5;
 }
 
 .dropdown-menu{
-    border: 1px solid #6558F5;
+    border: 2px solid #F7C324;
+    
 }
 
-.dropdown-divider{
-    border: 1px solid #6558F5;
+.dropdown-menu a{
+    color: #6558F5;
+}
+
+.dropdown-divider{  
+    border: 2px solid #F7C324;
 }
 
 .container-fluid > button[type="button"]{
     margin:0;
     padding: 0;
 }
+
+
+/* Sales Page */
+
+.sales-menu-page-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4, 100px);
+    margin: 50px 30px;
+    gap: 20px;
+}
+
+.sales-menu-page-container h1{
+    color: #6558F5;
+    font-weight: bolder;
+    text-align: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.sales-menu-page-container .grid-item-1{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales-menu-page-container .grid-item-2{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales-menu-page-container .grid-item-3{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sales-menu-page-container .grid-item-1 a,
+.sales-menu-page-container .grid-item-2 a,
+.sales-menu-page-container .grid-item-3 a{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: #F7C324;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 15px;
+    border: 2px solid #F7C324;
+    transition: 1s;
+}
+
+.sales-menu-page-container div a:hover{
+    background-color: white;
+    border: 2px solid #F7C324;  
+}
+
+/* Media Queries */
+
+/* Mobile first*/
+
+/* Tablet y superior */
+@media (min-width: 768px) {
+    /* Selected date format */
+    .selected-date-grid{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-rows: repeat(1, 50px);
+    }
+
+    .month-camp-item{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .selected-month-item{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .day-camp-item{
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .selected-day-item{
+        grid-column: 4 / 6;
+        grid-row: 1 / 2;
+    }
+    
+    .year-camp-item{
+        grid-column: 6 / 7;
+        grid-row: 1 / 2;
+    }
+
+    .selected-year-item{
+        grid-column: 7 / 8;
+        grid-row: 1 / 2;
+    }
+    
+}
+
+/* Laptop y superior */
+@media (min-width: 1280px) {
+
+    body{
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    header .company-logo {
+        display: none;
+    }
+    
+    footer {
+        display: none;
+    }
+
+    .background-login{
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: repeat(1, auto);
+        background-color: transparent;
+    }
+
+    .login-container{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        border-radius: 20px ;
+        padding: 60px 40px;
+    }
+
+    .login-img{
+        grid-column: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .company-logo-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .company-logo{
+        margin-right:0;
+        margin-bottom: 5px;
+    }
+    
+    .grid-sidebar p{
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .sidebar-menu{
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+    .sidebar-menu h4{
+        font-weight: bolder;
+        font-size:16px;
+        color: #6558F5;
+    }
+
+    .note{
+        margin-top: 300px;
+    }
+
+    .note-a{
+        margin-left: 30px;
+    }           
+
+    .sidebar-menu li{
+        list-style: none;
+    }
+
+    .sidebar-menu a{
+        text-decoration: none;
+        color: #6558F5;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto 1fr;
+        height: 100vh;
+    }
+    
+    .grid-header {
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+        z-index: 1;
+        background-color: white;
+    }
+    
+    .grid-sidebar {
+        display: inline;
+        grid-column: 1 / 2;
+        grid-row: 2 / 13;
+        background-color: #ecebf4;
+        z-index: 0;
+        height: 100%;
+    }
+    
+    .grid-main {
+        grid-column: 2 / 6;
+        grid-row: 2 / 13;
+    }
+
+    /* User-info grid */
+    main .user-container{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, auto);
+    }
+    
+    main .user-container .user-img{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        align-items: start;
+    }
+    
+    main .user-container .form-container{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .user-img img{
+        width: 300px;
+    }
+}
+
+/* Pantallas grandes y superiores */
+/*@media (min-width: 1440px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Pantallas 4K */
+/*@media (min-width: 2560px) {
+    body {
+        font-size: 24px;
+    }
+} */
